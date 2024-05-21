@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Arts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images">
+</head>
+<body>
+<header>
+    <div class="logo">Electronic Arts</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#services">Služby</a></li>
+            <li><a href="#gallery">Hry</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Vítejte v Electronic Arts</h1>
+    <p>Vítáme vás na oficiálních stránkách Electronic Arts (EA), jednoho z předních světových herních studií. Jsme společnost s bohatou historií a vášní pro vytváření nezapomenutelných herních zážitků, které spojují miliony hráčů po celém světě. Vytváříme hry pro všechny typy hráčů - od sportovních nadšenců až po milovníky dobrodružství a fantasy světů. Každá hra, kterou vydáváme, je výsledkem tvrdé práce, kreativity a odhodlání našeho talentovaného týmu. Podívejte se na naše nejnovější tituly a připravované projekty v sekci Hry.</p>
+    <button id="openModal">Speciální nabídka</button>
+</section>
+
+<!-- O nás -->
+<section id="about">
+    <h2>O nás</h2>
+    <p>Electronic Arts (EA) byla založena v roce 1982 s vizí přinášet inovativní a kvalitní zábavu, která zaujme hráče všech věkových kategorií. S více než třemi desetiletími zkušeností v herním průmyslu jsme se stali jedním z nejvýznamnějších vývojářů a vydavatelů her na světě. Naším posláním je inspirovat svět prostřednictvím her, které propojují lidi, vytvářejí vzpomínky a poskytují hluboké, smysluplné zážitky. V EA věříme, že hry mají moc spojovat lidi. Proto aktivně podporujeme naši herní komunitu a vytváříme platformy, kde se mohou hráči setkávat, sdílet své zkušenosti a společně se bavit. Pořádáme různé herní akce, soutěže a komunitní projekty, které podporují interakci a spolupráci mezi hráči z celého světa. Naše portfolio zahrnuje některé z nejznámějších a nejoblíbenějších herních sérií, jako jsou FIFA, The Sims, Battlefield, Dragon Age a mnoho dalších. Naším cílem je neustále posouvat hranice herního průmyslu a poskytovat hráčům hry, které si zamilují.</p>
+</section>
+
+<section id="services">
+    <h2>Naše služby</h2>
+    <ul>
+        <li>Vývoj her</li>
+        <li>Platformy</li>
+        <li>Herní Tituly</li>
+        <li>EA Play</li>
+        <li>Origin a EA App</li>
+        <li>Komunitní Podpora</li>
+        <li>Technická Podpora</li>
+        <li>Aktualizace a Údržba</li>
+        <li>Spolupráce s Partnery</li>
+        <li>Rodičovská Kontrola a Bezpečnost</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Hry</h2>
+    <div class="gallery-container">
+        <div class="gallery-item" data-index="1"><img src="images/fifa.jpg" alt=""></div>
+        <div class="gallery-item" data-index="2"><img src="images/nhl.jpg" alt=""></div>
+        <div class="gallery-item" data-index="3"><img src="images/wrc.jpg" alt=""></div>
+        <div class="gallery-item" data-index="4"><img src="images/nfl.jpg" alt=""></div>
+        <div class="gallery-item" data-index="5"><img src="images/ufc.jpg" alt=""></div>
+        <div class="gallery-item" data-index="6"><img src="images/f1.jpg" alt=""></div>
+    </div>
+    <script>
+        const galleryItem = document.getElementsByClassName("gallery-item");
+        const lightBoxContainer = document.createElement("div");
+        const lightBoxContent = document.createElement("div");
+        const lightBoxImg = document.createElement("div");
+        const lightBoxPrev = document.createElement("div");
+        const lightBoxNext = document.createElement("div");
+
+        lightBoxContainer.classList.add("lightbox")
+        lightBoxContent.classList.add("lightbox")
+        lightBoxPrev.classList.add("lightbox")
+        lightBoxNext.classList.add("lightbox")
+    </script>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Zpráva:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Odeslat</button>
+    </form>
+</section>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Speciální nabídka</h2>
+        <p>Získejte 20% slevu, při nákupu první hry, kterou si u nás zakoupíte!</p>
+    </div>
+</div>
+
+<section id="testimonials">
+    <h2>Recenze</h2>
+    <div class="carousel">
+        <div class="testimonial">
+            <p>"EA má potenciál, ale někdy se mi zdá, že kladou větší důraz na mikrotransakce než na skutečný herní zážitek. Některé hry, jako je Battlefield, jsou skvělé, ale loot boxy a pay-to-win prvky mi kazí celkový dojem." - Jan Novák</p>
+        </div>
+        <div class="testimonial">
+            <p>"Mám ráda The Sims sérii a EA dělá skvělou práci s novými dodatky a aktualizacemi. Vždy se těším na nové funkce a rozšíření. Podpora komunity je také vynikající." - Petra Svobodová</p>
+        </div>
+        <div class="testimonial">
+            <p>"EA má několik úžasných sérií, které mě nikdy neomrzí. FIFA a Madden NFL jsou moje nejoblíbenější. Grafika je vždy špičková a herní mechaniky jsou neustále vylepšovány. Oceňuji také to, že často pořádají slevy na své hry." - Karel Dvořák</p>
+        </div>
+        <div>
+            <p>"Dragon Age a Mass Effect jsou úžasné série, ale mám pocit, že poslední díly ztratily něco ze svého kouzla. Grafika a příběhy jsou stále na vysoké úrovni, ale rozhodnutí vedení ohledně herních mechanik nejsou vždy v souladu s přáním hráčů." - Anna Novotná</p>
+        </div>
+        <div>
+            <p>"Býval jsem velkým fanouškem EA, ale poslední dobou mě zklamali. Uvedení nedodělaných her na trh a zaměření na mikrotransakce mě odrazuje. Potřebují se více zaměřit na kvalitu než na rychlý zisk." - Tomáš Navrátil</p>
+        </div>
+        <div>
+            <p>"EA má tendenci zničit potenciálně skvělé hry kvůli špatným obchodním rozhodnutím. Anthem a Star Wars Battlefront II jsou toho dobrým příkladem. Potřebují se více starat o hráčskou komunitu a méně o mikrotransakce." - Lucie Dvořáková</p>
+        </div>
+    </div>
+    <button id="prev">‹</button>
+    <button id="next">›</button>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
